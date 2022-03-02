@@ -31,5 +31,5 @@ window.addEventListener('beforeinstallprompt', (event) => {
     console.log('👍', 'appinstalled', event);
     // Clear the deferredPrompt so it can be garbage collected
     window.deferredPrompt = null;
-    window.location.replace("/esp32-smart-light-remote/pwa/app.html");                                                     // set location to homepage (otherwise it would still be at the download page)
+    window.location.replace("/esp32-smart-light-remote/pwa/downloadcomplete.html");                                                     // set location to  (otherwise it would still be at the original download page when launched on desktop)
   });
