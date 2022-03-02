@@ -1,0 +1,20 @@
+{
+    "name": "Smart Light Remote",
+    "short_name": "Smart Light Remote",
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "theme_color": "#eeeeee",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/vdb-vdbsoftware-logo-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/vdb-vdbsoftware-logo-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
