@@ -1,7 +1,7 @@
 self.addEventListener("install", e => {                                                                     // when service worker is installed
     e.waitUntil(                                                                                            
         caches.open("slr-static").then(cache => {                                                           // create new cache and add the following:
-            return cache.addAll(["./", "./src/script.js", "./images/vdb-vdbsoftware-logo-192x192.png"])
+            return cache.addAll(["./", "./src/setup.js", "./src/install.js", "./images/vdb-vdbsoftware-logo-192x192.png"])
         })
     );
 });
