@@ -1,7 +1,7 @@
 {
     "name": "Smart Light Remote",
     "short_name": "Smart Light Remote",
-    "start_url": "/",
+    "start_url": "/pwa/",
     "background_color": "#ffffff",
     "theme_color": "#eeeeee",
     "display": "standalone",
