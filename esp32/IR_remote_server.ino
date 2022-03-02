@@ -79,7 +79,7 @@ void loop(){
             client.println();
 
             // the content of the HTTP response follows the header:
-            client.print("");
+            client.print("<script>location.replace('https://vdbthomas.github.io/esp32-smart-light-remote/pwa/app.html');</script>");
 
             // The HTTP response ends with another blank line:
             client.println();
