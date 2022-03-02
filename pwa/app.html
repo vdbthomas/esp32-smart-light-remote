@@ -6,6 +6,7 @@
         <meta name="theme-color" content="#eeeeee">
         <title>Smart Light Remote</title>
         <link rel="manifest" href="manifest.json">
+        <style src="src/app.css"></style>
         <script src="src/setup.js"></script>
         <script src="src/update.js"></script>
         <script src="src/install.js"></script>
@@ -14,6 +15,9 @@
     </head>
 
     <p>application</p>
+    <button onclick="document.getElementById('ifr').src = 'on';">on</button>
+    <button onclick="document.getElementById('ifr').src = 'off';">off</button>
+    <iframe id="ifr" src="http://esp.local/"></iframe>
 
 </body>
 </html>
