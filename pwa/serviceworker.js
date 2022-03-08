@@ -10,7 +10,7 @@ self.addEventListener("fetch", e => {                                           
     console.log(`Intercepting fetch request for: ${e.request.url}`);
     e.respondWith(
         caches.match(e.request).then(response =>{
-            return fetch(e.request) || response;                                                            // return from webserver or else from cache --> makes the app useable offline while still updating when files change (for development purposes)
+           return response || fetch(e.request);                                                             // return from cache before fetching from the webserver --> this will also make sure website is available if there is no connection to the webserver
         })
     );
 });
