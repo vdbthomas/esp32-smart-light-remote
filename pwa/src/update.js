@@ -6,7 +6,11 @@ var manifest = JSON.parse(request.responseText);
 if (localStorage.localVersion) {
     if(localStorage.localVersion !== manifest.version) {
         localStorage.localVersion = manifest.version;
-        location.reload(true);       
+        caches.open('slr-static').then(function(cache) {
+            cache.delete().then(function(response) {
+            console.log("New version detected, cache deleted");
+        });
+    })       
     }
 } else {
     localStorage.localVersion = manifest.version;
