@@ -7,10 +7,10 @@ if (localStorage.localVersion) {
     if(localStorage.localVersion !== manifest.version) {
             caches.open("slr-static").then(cache => {                                                       
                 return cache.addAll(["./app.html", "./src/setup.js", "./src/install.js", "./images/vdb-vdbsoftware-logo-192x192.png"]);
-                console.log("New version detected, cache deleted");
-                localStorage.localVersion = manifest.version;
-                // location.reload();
             });
+            console.log("New version detected, cache deleted");
+            localStorage.localVersion = manifest.version;
+            // location.reload();
     }
 } else {
     localStorage.localVersion = manifest.version;
