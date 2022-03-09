@@ -11,7 +11,7 @@ if (localStorage.localVersion) {
             });
         });
         localStorage.localVersion = manifest.version;
-        location.reload();
+        // location.reload();
     }
 } else {
     localStorage.localVersion = manifest.version;
