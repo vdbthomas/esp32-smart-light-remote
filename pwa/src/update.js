@@ -9,7 +9,7 @@ if (localStorage.localVersion) {
                 return cache.addAll(["./app.html", "./src/setup.js", "./src/install.js", "./images/vdb-vdbsoftware-logo-192x192.png"]);
             });
             console.log("New version detected, cache deleted");
-            localStorage.localVersion = manifest.version;
+            localStorage.localVersion = manifest.version; 
             location.reload(true);
     }
 } else {
