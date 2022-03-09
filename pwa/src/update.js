@@ -6,7 +6,7 @@ var manifest = JSON.parse(request.responseText);
 if (localStorage.localVersion) {
     if(localStorage.localVersion !== manifest.version) {
         caches.open('slr-static').then(function(cache) {
-            cache.delete().then(function(response) {
+            cache.delete(["./app.html", "./src/setup.js", "./src/install.js", "./images/vdb-vdbsoftware-logo-192x192.png"]).then(function(response) {
             console.log("New version detected, cache deleted");
             });
         });
