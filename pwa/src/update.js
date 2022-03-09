@@ -10,7 +10,7 @@ if (localStorage.localVersion) {
             });
             console.log("New version detected, cache deleted");
             localStorage.localVersion = manifest.version;
-            location.reload();
+            location.reload(true);
     }
 } else {
     localStorage.localVersion = manifest.version;
