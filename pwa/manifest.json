@@ -1,7 +1,7 @@
 {
     "name": "Smart Light Remote",
     "short_name": "Smart Light Remote",
-    "version": "0.1",
+    "version": "0.1.1",
     "start_url": "/esp32-smart-light-remote/pwa/app.html",
     "background_color": "#ffffff",
     "theme_color": "#eeeeee",
