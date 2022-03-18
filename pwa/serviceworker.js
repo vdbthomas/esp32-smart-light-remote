@@ -1,7 +1,7 @@
 self.addEventListener("install", e => {                                                                     // when service worker is installed
     e.waitUntil(                                                                                            
         caches.open("slr-static").then(cache => {                                                           // create new cache and add the following:
-            return cache.addAll([""])
+            return cache.addAll([""])                                                                       // for development reasons don´t cache anything yet
         })
     );
 });
