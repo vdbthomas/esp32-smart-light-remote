@@ -8,3 +8,13 @@ The project will have the front-end contained in a Progressive Web App (PWA) so 
 For now the application will contain basic remote functions, but can be further extended in the future to provide smart features such as home assistant based (voice) commands.
 
 The ESP32 can send data back to the application (it´s state: e.g. light is on or off) using the same method as described before (url parameters).
+
+## How to install
+The front-end mobile/desktop app can be installed using the following [link](https://vdbthomas.github.io/esp32-smart-light-remote/pwa/).
+Make sure that your browser and device supports progressive web apps.
+
+The back-end [code](https://vdbthomas.github.io/esp32-smart-light-remote/esp32/IR_remote_server.ino) for your ESP32 can be uploaded to your board by using the Arduino IDE (most simple option) or any other supported program.
+To add support in the Arduino IDE for the ESP32, follow this [guide](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html).
+
+Most libraries used come pre-installed with the Espressif Board Manager, for Infrared support I am using the [IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) library by crankyoldgit.
+This library can be installed by following the installation steps on the github page.
