@@ -10,7 +10,7 @@ self.addEventListener("fetch", e => {                                           
     console.log(`Intercepting fetch request for: ${e.request.url}`);
     e.respondWith(
         caches.match(e.request).then(response =>{
-           return response || fetch(e.request);                                                             // return from cache before fetching from the webserver --> this will also make sure website is available if there is no connection to the webserver
+           return response || fetch(e.request);                                                             // return from cache before fetching from the webserver --> this will also make sure the application is available if there is no connection to the webserver
         })
     );
 });
